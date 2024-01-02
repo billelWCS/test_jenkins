@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'webitech';
+
+  a: number = 0;
+  b: number = 0;
+  result: number | undefined;
+
+  calculate(): void {
+    this.result = this.a + this.b;
+  }
 }
