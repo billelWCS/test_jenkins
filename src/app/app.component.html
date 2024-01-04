@@ -14,4 +14,5 @@
   <p>Résultat : {{ result }}</p>
 </div>
 
-<p>Test add somthing else</p>
+<p *ngIf="!prod">Dev version</p>
+<p *ngIf="prod">Prod version</p>
